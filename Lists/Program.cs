@@ -108,11 +108,6 @@ namespace Lists
             //The user should be abkle to add as many movies as they want
 
             List<string> movieNames = new List<string>() { "GUARDIANS OF THE GALAXY", "BABY DRIVER", "WONDER WOMAN", "OKJA" };
-            string enterAnother = "Y";
-            while (enterAnother == "Y")
-            {
-
-            }
             Console.WriteLine("Please enter a movie you would like to watch: ");
             string userMovie = Console.ReadLine();
             string userMovieAny = userMovie.ToUpper();
@@ -138,11 +133,11 @@ namespace Lists
                     Console.WriteLine("Would you like to add another movie to your list? Y/N ");
                     string userAnother = Console.ReadLine();
                     string userAnotherAny = userAnother.ToUpper();
-                    if (userAnotherAny == "Y")
+                    if (userAnotherAny == "N")
                     {
 
                     }
-                    
+
                 }
                 else if (userResponseAny == "N")
                 {
@@ -154,7 +149,7 @@ namespace Lists
                     Console.WriteLine("Sorry to see you go!");
                     Environment.Exit(0);
                 }
-                
+
             }
 
 
